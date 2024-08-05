@@ -1,4 +1,4 @@
-//var farm_status = window.localStorage.setItem('farm', 1)
+var farm_status = window.localStorage.setItem('farm', 1)
 var farm_status = window.localStorage.getItem('farm')
 
 var secondsLeft = Math.floor((Date.now() - window.localStorage.getItem('timeOnline')) / 1000); // сколько секунд меня не было
