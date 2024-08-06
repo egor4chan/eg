@@ -24,6 +24,9 @@ function add_clicker_effect(x, y) {
 clicker.addEventListener('click', function(event) {
     click()
     add_clicker_effect(event.clientX, event.clientY)
+    var eggimg = document.getElementById('egg');
+    eggimg.style.scale = '1.03';
+    setTimeout(() => eggimg.style.scale = '1', 100);
 })
 
 
@@ -33,10 +36,7 @@ function click() {
     balance.innerHTML = new_balance;
     window.localStorage.setItem('eggs', new_balance);
 
-    var eggimg = document.getElementById('egg');
-    eggimg.style.scale = '1.03';
-    setTimeout(() => eggimg.style.scale = '1', 100);
-    navigator.vibrate(200);
+    
 }
 
 
