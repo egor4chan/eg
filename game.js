@@ -61,7 +61,7 @@ function upgrade() {
         document.getElementById('counter').innerHTML = resultBalance;
     }
     else {
-        console.log('d')
+        alert_100()
     }
     
 }
