@@ -32,6 +32,10 @@ function click() {
     var new_balance = Number(balance.innerHTML) + Number(document.getElementById('power').innerHTML);
     balance.innerHTML = new_balance;
     window.localStorage.setItem('eggs', new_balance);
+
+    var eggimg = document.getElementById('egg');
+    eggimg.style.scale = '1.03';
+    setTimeout(() => eggimg.style.scale = '1', 100);
 }
 
 
