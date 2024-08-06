@@ -36,6 +36,7 @@ function click() {
     var eggimg = document.getElementById('egg');
     eggimg.style.scale = '1.03';
     setTimeout(() => eggimg.style.scale = '1', 100);
+    navigator.vibrate(200);
 }
 
 
